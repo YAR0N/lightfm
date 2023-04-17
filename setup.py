@@ -8,7 +8,7 @@ import textwrap
 from setuptools import Command, Extension, setup
 
 # Import version even when extensions are not yet built
-__builtins__.__LIGHTFM_SETUP__ = True
+__builtins__["__LIGHTFM_SETUP__"] = True
 from lightfm import __version__ as version  # NOQA
 
 
